@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Test</title>
+    </head>
+  <body>
+    <p id="words">0</p>
+
+    <script>
+      console.log("testing");
+      var string = "";
+      for (var i = 0; i < 10; i++){
+        //console.log(i);
+        string += i;
+
+      }
+      var i = -1;
+      //console.log(string);
+      document.addEventListener("click", function(){
+        var p = document.getElementById("words");
+        if (parseInt(p.innerHTML) < 6) {
+          p.innerHTML = (i += 1);
+        }
+      //document.getElementById("words").innerHTML = (i += 1);
+      });
+    </script>
+    </body>
+
+</html>
